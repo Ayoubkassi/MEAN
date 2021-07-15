@@ -7,8 +7,8 @@
     "clien-install" : "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client" : "npm start --prefix client", //or it could be cd client && npm start
-    "dev" : "concurrently \"npm run server\" \"npm run clien\""
+    "client" : "npm start --prefix client", 
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Ayoub Kassi",
   "license": "ISC",
@@ -22,3 +22,4 @@
     "nodemon": "^2.0.12"
   }
 }
+
