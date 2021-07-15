@@ -4,7 +4,7 @@
   "description": "This is a mean stack for our smarden website",
   "main": "server.js",
   "scripts": {
-    "clien-install" : "npm install --prefix client",
+    "client-install" : "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client" : "npm start --prefix client", 
