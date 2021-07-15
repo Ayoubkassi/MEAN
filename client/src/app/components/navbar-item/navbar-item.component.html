@@ -1,0 +1,30 @@
+<li>
+   <!-- <a href="/{{item.toLocaleLowerCase()}}" class="item" [ngClass]="item == 'Accueil' ? 'active': '' "  *ngIf="(item != 'Services' && item != 'Accueil'); else loggedOut" > {{item}} </a> -->
+   <a [routerLink]="['/',item]" class="item"  *ngIf="(item != 'Services' && item != 'Accueil'); else loggedOut"  [routerLinkActive]="['active']"> {{item}} </a>
+
+</li>
+
+<ng-template #loggedOut>
+    <li *ngIf="item != 'Accueil';else third">
+        <a [routerLink]="['/']" class="item" >{{item}}
+        <div class="sub-menu1">
+            <ul>
+                <li><a href="#">Bureau d'études technique</a></li>
+                <li><a href="#">BIM Management et Maitrise d'oeuvre</a></li>
+                <li><a href="#">Académie Formation et Certification</a></li>
+                <li><a href="#">Logiciels et Solutions</a></li>
+            </ul>
+        </div>
+        </a>
+    </li>
+
+
+    
+  </ng-template>
+
+  <ng-template #third>
+    <li>
+        <a  [routerLink]="['/']" class="item" [routerLinkActiveOptions]="{exact:
+true}"   [routerLinkActive]="['active']"> {{item}} </a>
+    </li>
+  </ng-template>

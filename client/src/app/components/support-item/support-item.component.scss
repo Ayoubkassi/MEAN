@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+
+.support-item{
+    padding: 40px;
+    text-align: start;
+
+    .title{
+        font-size: 88px;
+        font-weight: 900;
+        line-height: 90px;
+        margin-bottom: 40px;
+        
+    }
+    
+    #arrow{
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
+
+    .description{
+        color : #616161;
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 24px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 16px;
+        height: 130px;
+        padding: 10px;
+
+        .feature{
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}

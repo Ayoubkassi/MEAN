@@ -1,0 +1,21 @@
+$main-color : #66C3FF;
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+
+    img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .text{
+        color:#6a6a6a;
+        font-size: 18px;
+        margin-top: 15px;
+        line-height: 32px;
+    }
+
+    
+}

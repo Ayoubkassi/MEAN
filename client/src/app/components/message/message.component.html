@@ -1,0 +1,10 @@
+
+
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Your Name" name="Name" [(ngModel)]="Name"  class="inp">
+    <input type="text" placeholder="Your Email" name="Email" [(ngModel)]="Email"  class="inp">
+    <input type="text" placeholder="Your subject" name="Subject" [(ngModel)]="Subject"  class="inp">
+
+    <textarea name="text" [(ngModel)]="text" id="area"></textarea>
+    <button type="submit" class="sub" value="Send message">Send message</button>
+</form>

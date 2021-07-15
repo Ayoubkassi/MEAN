@@ -1,0 +1,27 @@
+.support{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+
+
+    &> div {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        color : #fff;
+    }
+
+    #img2{
+       background: url('../../../assets/suppor1.jpg');
+       background-position: center center;
+    }
+
+    #img1{
+        background: url('../../../assets//suppor2.jpg');
+        background-size: cover;
+
+    }
+
+    
+}

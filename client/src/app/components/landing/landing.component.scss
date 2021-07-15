@@ -1,0 +1,50 @@
+
+$main-color : #0F3E5C;
+
+.landing{
+
+        position: absolute;
+        left: 30%;
+        top:50%;
+        transform: translate(-40%,-50%);
+        
+
+    .main-title{
+        font-size: 65px;
+        letter-spacing: 4px;
+        font-weight: bolder;
+        
+       /* color: #fff;
+        background-color: $main-color;*/
+
+        .title1{
+            color: #fff;
+            background-color: rgba(102,195,255,0.3);
+           
+        }
+
+        .title2{
+            color : $main-color;
+            background-color: rgba(255,255,255,0.6);
+        }
+
+       
+    }
+
+    p{
+        font-size: 24px;
+        color: black;
+        margin-top: 15px;
+    }
+
+   
+}
+
+
+.directions{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}

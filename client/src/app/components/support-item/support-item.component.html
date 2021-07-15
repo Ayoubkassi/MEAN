@@ -1,0 +1,11 @@
+<div class="support-item">
+    <h1 class="title"> {{support.title}} </h1>
+    <div class="description"> {{support.description}} </div>
+    <div class="features">
+        <div class="feature" *ngFor="let feature of support.features">
+            <img src="../../../assets/right-arrow-blue.png" alt="" id="arrow">
+            <div> {{feature}} </div>
+        </div>
+    </div>
+    
+</div>

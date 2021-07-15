@@ -1,0 +1,30 @@
+.navbar{
+    max-height: 12%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    padding: 0 0px 0 150px;
+    align-items: center;
+    /*border-bottom: 1px solid black;*/
+    z-index: 2;
+    background-color: #fff;
+    list-style-type: none;
+
+    .logo img{
+        width: 80px;
+        height: 74px;
+    }
+
+    .items{
+        flex-basis: 73%;
+        width: 73%;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 10%;
+    }
+    
+    .logo {
+        flex-basis: 27%;
+        width: 27%;
+    }
+}

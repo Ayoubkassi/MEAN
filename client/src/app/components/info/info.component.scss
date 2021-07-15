@@ -1,0 +1,95 @@
+$main-color : #0d6399;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.info{
+    background:url('../../../assets/back3.png');
+    background-position: cover;
+    padding: 60px 30px;
+    position: relative;
+    min-height: 100vh;
+
+    h1{
+        font-size: 80px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .heading{
+        max-width: 580px;
+        
+        p{
+            line-height: 32px;
+            font-size: 24px;
+            color: black;
+        }
+    }
+
+    .circles{
+        font-size: 20px;
+        cursor: pointer;
+       
+
+        .one{
+            width: 230px;
+            height: 230px;
+            border : 1px dashed black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            bottom: 55%;
+            right: 7%;
+            position: absolute;
+            &:hover{
+                font-size: 22px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .two{
+            width: 300px;
+            height: 300px;
+            border : 1px dashed black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            bottom: 38%;
+            right: 25%;
+            position: absolute;
+            &:hover{
+                font-size: 22px;
+                transition: all 0.2s ease-in-out;
+            }
+
+        }
+
+        .three{
+            width: 270px;
+            height: 270px;
+            border : 1px dashed black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            bottom: 12%;
+            right: 7%;
+            position: absolute;
+            &:hover{
+                font-size: 22px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        span{
+            color : $main-color;
+            font-size: 68px;
+            font-weight: 500;
+            margin-bottom: -16px;
+        }
+    }
+}

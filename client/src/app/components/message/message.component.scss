@@ -1,0 +1,46 @@
+$main-color : #66c3ff;
+
+#area{
+    width: 92%;
+    min-height: 120px;
+    border : 1px solid #e0e0e0;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #616161 ;
+    resize: vertical;
+}
+
+.inp{
+    border : none;
+    outline: none;
+    width: 92%;
+    height: 54px;
+    padding: 10px 30px;
+    border: 1px solid #e0e0e0;
+    color: #616161;
+    font-size: 18px;
+    margin-bottom: 24px;
+
+    &:focus{
+        border-color: #cecccc;
+    }
+}
+
+.sub{
+    width: 28%;
+    max-width: 200px;
+    height: 65px;
+    margin-top: 30px;
+    padding: 20px 30px;
+    background : $main-color;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    &:hover{
+        transform: scale(.95);
+        transition: all 0.1s ease-in-out;
+    }
+}
