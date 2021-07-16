@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from './components/contact/contact.component';
-import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ActualiteComponent } from './pages/actualite/actualite.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   {path : '' , component : HomeComponent},
-  {path : 'Contact' , component : ContactComponent}
+  {path : 'Contact' , component : ContactComponent},
+  {path : 'Actualite' , component : ActualiteComponent},
+  {path : 'Produits' , component : ProductsComponent}
 ];
 
 @NgModule({

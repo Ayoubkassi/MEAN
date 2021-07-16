@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AgmCoreModule } from '@agm/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,11 +18,13 @@ import { SupportComponent } from './components/support/support.component';
 import { SupportItemComponent } from './components/support-item/support-item.component';
 import { InfoComponent } from './components/info/info.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { MessageComponent } from './components/message/message.component';
 import { InputFormComponent } from './components/input-form/input-form.component';
-import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ActualiteComponent } from './pages/actualite/actualite.component';
+import { NewsBoxComponent } from './components/news-box/news-box.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     MessageComponent,
     InputFormComponent,
-    
+    ProductsComponent,
+    ActualiteComponent,
+    NewsBoxComponent,
 
   ],
   imports: [

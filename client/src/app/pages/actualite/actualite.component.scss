@@ -1,0 +1,55 @@
+ $main-color : #66C3FF;
+
+.main{
+    height: 30vh;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), rgba(#969090, 0.57)),url("../../../assets/back2.webp");
+    h1{
+        font-size: 100px;
+        position: relative;
+        top: 30px;
+        left: 35%;
+        color: white;
+    }
+    .middle{
+        background: white;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        padding-bottom: 50px;
+        padding-left: 15px;
+        margin: 30px 70px;
+        height: 2000px;
+
+        .actu1{
+            padding-top: 20px;
+            p{
+
+                font-size: 30px;
+                font-weight: 600;
+                border-left: 4px solid $main-color;
+                margin-bottom: 20px;
+
+                &:first-letter{
+                    margin-left: 10px;
+                    }
+            }
+            .info{
+                background: url("../../../assets/back2.webp");
+                background-size: 90%;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 40vh;
+            }
+            img{
+                margin-top: 150px;
+            }
+            #right{
+                position: relative;
+                left: 153vh;
+            }
+        }
+
+    }
+}
