@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SubjectService } from 'src/app/services/subject.service';
+import { Subject } from '../../Subject';
+
 
 @Component({
   selector: 'app-message',
@@ -10,12 +13,15 @@ export class MessageComponent implements OnInit {
   Email : string = "";
   Subject : string = "";  
   text : string = "";
+  subjects : Subject[] = [];
+  
 
 
 
-  constructor() { }
+  constructor(private subjectService : SubjectService) { }
 
   ngOnInit(): void {
+
   }
 
   onSubmit(){
@@ -26,10 +32,13 @@ export class MessageComponent implements OnInit {
     const message = {
       name : this.Name,
       email : this.Email,
-      subject : this.Subject,
+      sujet : this.Subject,
       text : this.text
     }
-    console.log(message);
+    
+    this.subjectService.addSubject(message).subscribe((subject)=> {
+      console.log(subject);
+    });
 
     this.text= "";
     this.Name = "";
