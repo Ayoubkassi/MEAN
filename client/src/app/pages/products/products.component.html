@@ -1,60 +1,29 @@
-<div class="main" >
-    <div class="main1"> 
-        <app-navbar></app-navbar>
-     <h1>Produits</h1>
-    </div>
-    
-    <div class='middle'>
-        <div class='prdct'>
-            <p class='title1'>Nos Produits : </p>
-            <div class='info'>
+<div class="products">
+     <div class="first">
+            <app-navbar></app-navbar>
+            <h1>Produit</h1>
+        </div>
+        <div class="second">
+            <div class=boxes>
+                <div class="left">
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                    <app-product-box></app-product-box>
+                </div>
 
-<div class='produit'>
-    <div class='search'>
-        <input type="text" placeholder="Rechercher votre produit !" size="50">
-        <button class='btn1'>
-            <img src='../../../assets/button-search.png' alr="search">
-        </button>
-    </div>
-    <div class='content'>
-        <div class='a items'>
-            <div class='item'>
-                <img class='pic' src='../../../assets/BIM360.jpg' alt='pdct'>
-                <h4>BIM 360 DOCS</h4>
-                <button>Voir l'article</button>
-            </div>
-            <div class='item'>
-                <img class='pic' src='../../../assets/revit.jpg' alt='pdct'>
-                <h4>Revit</h4>
-                <button>Voir l'article</button>
-            </div>
-            <div class='item'>
-                <img class='pic' src='../../../assets/autocad.jpg' alt='pdct'>
-                <h4>AutoCAD</h4>
-                <button>Voir l'article</button>
-            </div>
-            <div class='item'>
-                <img class='pic' src='../../../assets/autojoin.png' alt='pdct'>
-                <h4>AutoJoin</h4>
-                <button>Voir l'article</button>
-            </div>
-            <div class='item'>
-                <img class='pic' src='../../../assets/enscape.jpg' alt='pdct'>
-                <h4>Enscape</h4>
-                <button>Voir l'article</button>
+                <div class="right">
+                    <div class="search">
+                        <app-input-form label="Recherche de produits"></app-input-form>
+                        <button class="btn">Rechercher</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class='achat a'>
-            <h2>Vos achats : </h2>
-            <p>Vous avez 0 article</p>
-            <button (click)="onAddPost()">Voir vos articles</button>
-        </div>
-
-
-    </div>
 </div>
-
-</div>
-</div>
-
-</div>  

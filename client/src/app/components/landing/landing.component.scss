@@ -4,15 +4,17 @@ $main-color : #0F3E5C;
 .landing{
 
         position: absolute;
-        left: 30%;
-        top:50%;
+        left: 40%;
+        top:40%;
         transform: translate(-40%,-50%);
+        min-width : 75%; 
         
 
     .main-title{
         font-size: 65px;
         letter-spacing: 4px;
         font-weight: bolder;
+        text-align: center;
         
        /* color: #fff;
         background-color: $main-color;*/
@@ -20,6 +22,7 @@ $main-color : #0F3E5C;
         .title1{
             color: #fff;
             background-color: rgba(102,195,255,0.3);
+            margin-bottom: 5px;
            
         }
 
@@ -33,18 +36,19 @@ $main-color : #0F3E5C;
 
     p{
         font-size: 24px;
-        color: black;
+        color: white;
         margin-top: 15px;
+        text-align : center;
     }
 
    
 }
 
 
-.directions{
+/* .directions{
     position: absolute;
     bottom: 0;
     right: 0;
     display: flex;
     flex-direction: row-reverse;
-}
+} */
