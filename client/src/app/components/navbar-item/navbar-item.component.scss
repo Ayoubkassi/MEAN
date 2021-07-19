@@ -54,6 +54,7 @@ li{
     list-style-type: none;
     height: 150%;
 
+
     &:hover .item .sub-menu1{
         display: block;
        /* position: absolute;*/
@@ -70,6 +71,7 @@ li{
     }
 
 .item{
+    padding : 8px 0;
 
     
     .sub-menu1{
@@ -79,7 +81,7 @@ li{
         box-shadow: 12px 0 15px -4px rgba(185, 189, 194, 0.8),
          -12px 0 8px -4px rgba(185, 189, 194, 0.8);
          position: absolute;
-         margin-top: 44%;
+         margin-top: 10%;
         li{
             list-style-type: none;
             margin-bottom: 15px;

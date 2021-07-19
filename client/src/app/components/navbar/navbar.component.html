@@ -3,6 +3,80 @@
         <img src="../../../assets/logo-retina.png" alt="">
     </div>
     <div class="items" >
-        <app-navbar-item *ngFor="let item of navbarItems" [item] ="item"></app-navbar-item>
+       <!-- <app-navbar-item *ngFor="let item of navbarItems" [item] ="item"></app-navbar-item> -->
+       <li>
+           <a [routerLink]="['/']" class="item">Accueil</a>
+       </li>
+
+       <li>
+           <a [routerLink]="['/Actualite']" class="item">Actualite</a>
+       </li>
+
+        <li >
+        <a [routerLink]="['/Ingénierie']" class="item" >Ingénierie
+        <div class="sub-menu1">
+            <ul>
+                <li><a href="#">Superstructure des batiments</a></li>
+                <li><a href="#">Resaux des fluids pour batiment a tous usage</a></li>
+                <li><a href="#">Reseaux d'electricite CFO / CFA</a></li>
+                <li><a href="#">Etude de l'assainissement , VRD</a></li>
+                <li><a href="#">Coordination et suivi des travaux de réalisation</a></li>
+                <li><a href="#">Economie de la construction et</a></li>
+            </ul>
+        </div>
+        </a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/Solutions']" class="item">Solutions
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="">Logiciel </a></li>
+                    <li><a href="">Matériel Scan to BIM</a></li>
+                    <li><a href="">Développement</a></li>
+                </ul>
+            </div>
+           </a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/']" class="item">SDE BIM
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="#">Audite</a></li>
+                    <li><a href="#">Gestion des Plateformes collaboratives</a></li>
+                    <li><a href="#">Accompagnements</a></li>
+                    <li><a href="#">Modélisation 3D </a></li>
+                    <li><a href="#">Détachement de compétences (modeleur / coordonnateur / Bim Manager)</a></li>
+                </ul>
+            </div>
+           </a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/Contact']" class="item">Contact</a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/']" class="item">Rectrutement</a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/']" class="item">Académie
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="">Formation</a></li>
+                    <li><a href="">Certification </a></li>
+                    <li><a href="">UTS ( upgrade technical skills )</a></li>
+                </ul>
+            </div>
+           </a>
+    </li>
+
+    <li>
+           <a [routerLink]="['/']" class="item">Quiz</a>
+    </li>
+
+
     </div>
 </nav>

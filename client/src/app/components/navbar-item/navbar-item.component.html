@@ -1,6 +1,6 @@
 <li>
    <!-- <a href="/{{item.toLocaleLowerCase()}}" class="item" [ngClass]="item == 'Accueil' ? 'active': '' "  *ngIf="(item != 'Services' && item != 'Accueil'); else loggedOut" > {{item}} </a> -->
-   <a [routerLink]="['/',item]" class="item"  *ngIf="(item != 'Services' && item != 'Accueil'); else loggedOut"  [routerLinkActive]="['active']"> {{item}} </a>
+   <a [routerLink]="['/',item]" class="item"  *ngIf="(item != 'Ingénierie' && item != 'Accueil'); else loggedOut"  [routerLinkActive]="['active']"> {{item}} </a>
 
 </li>
 
@@ -9,10 +9,12 @@
         <a [routerLink]="['/']" class="item" >{{item}}
         <div class="sub-menu1">
             <ul>
-                <li><a href="#">Bureau d'études technique</a></li>
-                <li><a href="#">BIM Management et Maitrise d'oeuvre</a></li>
-                <li><a href="#">Académie Formation et Certification</a></li>
-                <li><a href="#">Logiciels et Solutions</a></li>
+                <li><a href="#">Superstructure des batiments</a></li>
+                <li><a href="#">Resaux des fluids pour batiment a tous usage</a></li>
+                <li><a href="#">Reseaux d'electricite CFO / CFA</a></li>
+                <li><a href="#">Etude de l'assainissement , VRD</a></li>
+                <li><a href="#">Coordination et suivi des travaux de réalisation</a></li>
+                <li><a href="#">Economie de la construction et</a></li>
             </ul>
         </div>
         </a>
