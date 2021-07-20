@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const subjects = require('./routes/api/subjects');
+const products = require('./routes/api/products');
 
 const app = express();
 
@@ -24,10 +25,31 @@ mongoose.connect(db).then(()=>{
     console.log(err);
 });
 
+/*const connectDB = async () => {
+    try {
+        await mongoose.connect(db, {
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true,
+            useFindAndModify: false
+        });
+        console.log("MongoDB Conected")
+    } catch (err) {
+        console.error(err.message);
+        process.exit(1);
+    }
+};
+
+connectDB();
+
+*/
+
 
 //use routes
 
 app.use('/api/subjects',subjects);
+/*app.use('/api/products',products);*/
+
 
 const port = process.env.PORT || 5000;
 
