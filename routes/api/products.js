@@ -7,11 +7,15 @@ const router = express.Router();
 //thi is our model
 const Product = require ('../../modules/Product');
 
+//get one id
+const idFilter = req => product => product.id === parseInt(req.params.id);
+
+
 
 
 //simple get request -> get all our products
 
-//with access public 
+//with access public
 
 router.get('/',(req,res,next)=>{
     Product.find()
@@ -37,6 +41,23 @@ router.post('/',(req,res)=>{
 	newProduct.save().then(
 			(product)=> (res.json(product))
 		)
+
+});
+
+router.delete('/:id',(req,res)=>{
+    Product.findById(req.params.id)
+    .then(product => product.remove().then(()=> res.json({message : 'Product deleted succesfully'})))
+    .catch(err => res.status(404).json({success : false}));
+});
+
+
+//Update
+
+router.put('/:id',(req,res)=>{
+  //const updProduct = req.body;
+Product.findByIdAndUpdate({_id:req.params.id}, req.body)
+.then(product => res.json(product));
+
 
 });
 

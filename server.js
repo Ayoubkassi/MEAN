@@ -48,7 +48,7 @@ connectDB();
 //use routes
 
 app.use('/api/subjects',subjects);
-/*app.use('/api/products',products);*/
+app.use('/api/products',products);
 
 
 const port = process.env.PORT || 5000;
@@ -56,4 +56,3 @@ const port = process.env.PORT || 5000;
 //start our server
 
 app.listen(port,()=> console.log(`server started in port : ${port}`));
-
