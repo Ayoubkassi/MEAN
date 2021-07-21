@@ -26,6 +26,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ActualiteComponent } from './pages/actualite/actualite.component';
 import { NewsBoxComponent } from './components/news-box/news-box.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
     ActualiteComponent,
     NewsBoxComponent,
     ProductBoxComponent,
+    AdminComponent,
 
   ],
   imports: [

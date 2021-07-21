@@ -4,12 +4,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ActualiteComponent } from './pages/actualite/actualite.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
-  {path : '' , component : HomeComponent},
-  {path : 'Contact' , component : ContactComponent},
-  {path : 'Actualite' , component : ActualiteComponent},
-  {path : 'Solutions' , component : ProductsComponent}
+  {path : ''          , component : HomeComponent      },
+  {path : 'Contact'   , component : ContactComponent   },
+  {path : 'Actualite' , component : ActualiteComponent },
+  {path : 'Solutions' , component : ProductsComponent  },
+  {path : 'admin'     , component : AdminComponent     }
 ];
 
 @NgModule({
