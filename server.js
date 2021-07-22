@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const passport = require('passport');
 const cors = require('cors');
 
 const subjects = require('./routes/api/subjects');
@@ -49,6 +50,12 @@ connectDB();
 
 app.use('/api/subjects',subjects);
 app.use('/api/products',products);
+
+// Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
 
 
 const port = process.env.PORT || 5000;
