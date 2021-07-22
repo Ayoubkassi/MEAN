@@ -21,7 +21,7 @@ export class AdminComponent implements OnInit {
 
   Login(){
 
-    if(!this.username){
+    if(this.username == ""){
       alert("Please Enter Your Username");
       return;
     }
@@ -33,7 +33,7 @@ export class AdminComponent implements OnInit {
     this.authService.authenticateUser(user).subscribe((data)=> {
       if(data.success){
         this.authService.storeUserData(data.token,data.user);
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['']);
       }
       else{
         alert(data.msg);
@@ -47,11 +47,9 @@ export class AdminComponent implements OnInit {
 
 
   onLogout(){
-    this.authService.logout().subscribe();
+    this.authService.logout();
     this.router.navigate(['admin']);
     return false;
   }
 
   }
-
-}
