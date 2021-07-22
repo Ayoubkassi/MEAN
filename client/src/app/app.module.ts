@@ -27,6 +27,7 @@ import { ActualiteComponent } from './pages/actualite/actualite.component';
 import { NewsBoxComponent } from './components/news-box/news-box.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AdminComponent } from './pages/admin/admin.component';
     NewsBoxComponent,
     ProductBoxComponent,
     AdminComponent,
+    DashboardComponent,
 
   ],
   imports: [
