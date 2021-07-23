@@ -73,7 +73,9 @@ const Product = require ('../../modules/Product');
 //get one id
 //const idFilter = req => product => product.id === parseInt(req.params.id);
 
-
+router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+  res.json({user: req.user});
+});
 
 
 

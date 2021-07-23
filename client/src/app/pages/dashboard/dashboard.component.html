@@ -1,4 +1,6 @@
 <div class="container">
+
+  <div *ngIf="user;else not_found">
     <h1>Hey And Welcome Again</h1>
   <div class="jumbotron">
   <h1 class="display-4">Dashboard</h1>
@@ -8,5 +10,7 @@
   <p>This is for Smarden Company Using A mean stack inspiring By Mr Joma Tech</p>
   <a mdbBtn color="primary" size="lg" href="#" role="button" mdbWavesEffect>Dashboard</a>
 </div>
+</div>
 
+<ng-template #not_found><h1 [ngStyle]="{'text-align':'center'}">You are Not authorized to be Here</h1></ng-template>
 </div>

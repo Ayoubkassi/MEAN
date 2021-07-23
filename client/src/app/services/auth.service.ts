@@ -30,10 +30,27 @@ export class AuthService {
     return this.http.post<User>(url,user,httpOptions);
   }
 
+  getProfile(): Observable<any> {
+  this.loadToken();
+  let headers = {
+    headers : new HttpHeaders({
+      'Content-Type' : 'application/json',
+      'Authorization': this.authToken
+    })
+  }
+  const url = `${this.apiUrl}/profile`;
+  return this.http.get<any>(url,headers);
+}
+
   authenticateUser(user : User) : Observable<any> {
     const url = `${this.apiUrl}/authenticate`;
     return this.http.post<any>(url,user,httpOptions);
     //return this.http.post<User>(`${this.apiUrl}/authenticate`,user,httpOptions);
+  }
+
+  loadToken() {
+    const token = localStorage.getItem('id_token');
+    this.authToken = token;
   }
 
   storeUserData(token : any , user : any){
