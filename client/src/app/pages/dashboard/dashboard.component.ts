@@ -29,4 +29,10 @@ export class DashboardComponent implements OnInit {
   );
   }
 
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['admin']);
+  }
+
+
 }
