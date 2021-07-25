@@ -9,6 +9,7 @@ export class MainAddproductComponent implements OnInit {
 
   Name : string = "" ;
   Price : string = "";
+  Image : string = "";
 
   constructor() { }
 
@@ -17,6 +18,12 @@ export class MainAddproductComponent implements OnInit {
 
   onSubmit(){
     console.log("Add");
+    console.log(Image);
   }
+
+
+
+
+
 
 }

@@ -28,13 +28,19 @@
           <form class="add-form" (ngSubmit)="onSubmit()">
             <input type="text" placeholder="Product Name" name="Name" [(ngModel)]="Name"  class="inp">
             <input type="text" placeholder="Product Price" name="Price" [(ngModel)]="Price"  class="inp">
-           
+            <br/><br/>
+            <label for="file" class="label-file">Choisir une image</label>
+            <input id="file" class="input-file" type="file" name="Image" [(ngModel)]="Image" >
+            {{Image.split('.')[0]}}
+            <br/><br/>
 
-            
+
+
+
             <button type="submit" class="sub" value="Send message">Send message</button>
         </form>
         </div>
-           
+
     </div>
   </div>
 </div>
