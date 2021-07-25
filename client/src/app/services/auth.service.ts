@@ -30,6 +30,8 @@ export class AuthService {
     return this.http.post<User>(url,user,httpOptions);
   }
 
+
+
   getProfile(): Observable<any> {
   this.loadToken();
   let headers = {

@@ -28,6 +28,12 @@ import { NewsBoxComponent } from './components/news-box/news-box.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
+
+
 
 @NgModule({
   declarations: [
@@ -52,6 +58,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     ProductBoxComponent,
     AdminComponent,
     DashboardComponent,
+    AdminProductsComponent,
 
   ],
   imports: [
@@ -62,7 +69,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyC_DhLt9pwH4WWwzS9Vp1OLU2Yh8Wo9Dno'
     }),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,15 +6,17 @@ import { ActualiteComponent } from './pages/actualite/actualite.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
 
 
 const routes: Routes = [
-  {path : ''          , component : HomeComponent      },
-  {path : 'Contact'   , component : ContactComponent   },
-  {path : 'Actualite' , component : ActualiteComponent },
-  {path : 'Solutions' , component : ProductsComponent  },
-  {path : 'admin'     , component : AdminComponent     },
-  {path : 'dashboard' , component : DashboardComponent     }
+  {path : ''          , component : HomeComponent          },
+  {path : 'Contact'   , component : ContactComponent       },
+  {path : 'Actualite' , component : ActualiteComponent     },
+  {path : 'Solutions' , component : ProductsComponent      },
+  {path : 'admin'     , component : AdminComponent         },
+  {path : 'dashboard' , component : DashboardComponent     },
+  {path : 'products'  , component : AdminProductsComponent }
 ];
 
 @NgModule({
