@@ -91,9 +91,24 @@
                   background-color: #30BCED;
                   padding: 1em;
                   border-radius: 5px;
+                  cursor : pointer;
+                  display: flex;
+                  align-items : center;
+                  justify-content : center;
+                    &:hover{
+
+                       box-shadow: 0 0 5px 2px rgb(157, 157, 157);
+                    }
+
+                    img{
+                      width: 80px;
+                      height: 80px;
+                      margin-right: 25px;
+                    }
                   
 
                 }
+
 
 
             }
@@ -108,8 +123,28 @@
               top: 48%;
               left: 50%;
               transform: translate(-50%,-50%);
+              
+
+              cursor : pointer;
+
+                &:hover{
+               box-shadow: 0 0 5px 2px rgb(137, 137, 137);
+
+                }
+
+                .subject{
+                  display: flex;
+                  justify-content : center;
+                  align-items : center;
 
 
+                }
+
+                  img{
+                      width: 80px;
+                      height: 80px;
+                      margin-right: 25px;
+                    }
             }
 
 

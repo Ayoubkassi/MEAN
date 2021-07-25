@@ -1,0 +1,130 @@
+.admin{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+    .left{
+      flex-basis: 20%;
+      background-color: #303036;
+      padding: 10px 20px;
+      color:white;
+
+        h2{
+          margin-top: 30px;
+          margin-left: 0px;
+        }
+
+        .items{
+          margin-top: 40px;
+          padding: 0 10px;
+          color: #30BCED;
+
+            .links{
+              padding: 0 15px;
+              display: flex;
+              flex-direction: column;
+              a{
+                text-decoration: none;
+                color: white;
+                margin-top: 14px;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+              }
+
+              a.active{
+                color : #30BCED;
+              }
+            }
+        }
+    }
+
+    .right{
+      flex-basis: 80%;
+      background-color: #FFFAFF;
+      display: flex;
+      flex-direction: column;
+
+        .top{
+          flex-basis: 17%;
+          background-color: #30BCED;
+          display: flex;
+          align-items: center;
+
+            .search{
+              flex-basis: 60%;
+              margin-left: 30px;
+              margin-top: 2%;
+
+                #search{
+
+                }
+
+            }
+            .info{
+              flex-basis: 40%;
+              border-left: 1px solid white;
+                img{
+                  width: 40px;
+                  height: 40px;
+                  float: right;
+                  margin-right: 30px;
+                  cursor: pointer;
+                }
+            }
+
+        }
+
+        .down{
+          position: relative;
+          flex-basis: 83%;
+          padding: 30px 40px;
+
+            h1{
+              text-align:center;
+            }
+
+            .form {
+
+              margin-left : 40px;
+              margin-top : 20px;
+                      .inp{
+            border : none;
+            outline: none;
+            width: 92%;
+            height: 54px;
+            padding: 10px 30px;
+            border: 1px solid #cecccc;
+            color: #616161;
+            font-size: 18px;
+            margin-bottom: 24px;
+
+            &:focus{
+                border-color: rgb(50,50,50);
+            }
+        }
+
+                    .sub{
+            width: 28%;
+            max-width: 200px;
+            height: 65px;
+            margin-top: 10px;
+            padding: 20px 30px;
+            background : #30BCED;
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            &:hover{
+                transform: scale(.95);
+                transition: all 0.1s ease-in-out;
+            }
+}
+
+            }
+       
+
+        }
+    }
+}

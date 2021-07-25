@@ -32,6 +32,8 @@ import {MatInputModule} from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
+import { MainProductComponent } from './pages/main-product/main-product.component';
+import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
 
 
 
@@ -59,6 +61,8 @@ import { AdminProductsComponent } from './pages/admin-products/admin-products.co
     AdminComponent,
     DashboardComponent,
     AdminProductsComponent,
+    MainProductComponent,
+    MainAddproductComponent,
 
   ],
   imports: [

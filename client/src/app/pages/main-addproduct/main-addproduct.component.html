@@ -1,0 +1,40 @@
+<div class="admin">
+  <div class="left">
+    <h2>Smarden Admin</h2>
+    <div class="items">
+      <h3>Dashboard</h3>
+        <div class="links">
+          <a href="main-products" class="active">Products</a>
+          <a href="">Subjects</a>
+          <a href="">Actualite</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="top">
+      <div class="search">
+        <app-input-form label="Seach here..." [ngStyle]="{'border-radius':'40px'}"></app-input-form>
+      </div>
+
+      <div class="info">
+        <img src="../../../assets/notification.png" alt="">
+      </div>
+    </div>
+
+    <div class="down">
+        <h1>Add Product</h1>
+        <div class="form">
+          <form class="add-form" (ngSubmit)="onSubmit()">
+            <input type="text" placeholder="Product Name" name="Name" [(ngModel)]="Name"  class="inp">
+            <input type="text" placeholder="Product Price" name="Price" [(ngModel)]="Price"  class="inp">
+           
+
+            
+            <button type="submit" class="sub" value="Send message">Send message</button>
+        </form>
+        </div>
+           
+    </div>
+  </div>
+</div>
