@@ -30,8 +30,7 @@
             <input type="text" placeholder="Product Price" name="Price" [(ngModel)]="Price"  class="inp">
             <br/><br/>
             <label for="file" class="label-file">Choisir une image</label>
-            <input id="file" class="input-file" type="file" name="Image" [(ngModel)]="Image" >
-            {{Image.split('.')[0]}}
+            <input id="file" class="input-file" type="file"  (change)="onFileSelected($event)">
             <br/><br/>
 
 
