@@ -84,7 +84,7 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
 //with access public
 
 
-router.get('/', passport.authenticate('jwt', {session:false}),(req,res,next)=>{
+router.get('/', /*passport.authenticate('jwt', {session:false}),*/(req,res,next)=>{
     Product.find()
             .sort({date : 1})
             .then(products => res.json(products))
