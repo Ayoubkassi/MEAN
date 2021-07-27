@@ -38,6 +38,7 @@ import { MainEditproductComponent } from './pages/main-editproduct/main-editprod
 import { MainActualiteComponent } from './pages/main-actualite/main-actualite.component';
 import { MainAddnewsComponent } from './pages/main-addnews/main-addnews.component';
 import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.component';
+import { TeamComponent } from './components/team/team.component';
 
 
 
@@ -71,6 +72,7 @@ import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.compo
     MainActualiteComponent,
     MainAddnewsComponent,
     MainEditnewsComponent,
+    TeamComponent,
 
   ],
   imports: [

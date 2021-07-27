@@ -13,6 +13,7 @@ import { MainEditproductComponent }       from './pages/main-editproduct/main-ed
 import { MainActualiteComponent }         from './pages/main-actualite/main-actualite.component';
 import { MainAddnewsComponent }           from './pages/main-addnews/main-addnews.component';
 import { MainEditnewsComponent }          from './pages/main-editnews/main-editnews.component';
+import { TeamComponent } from './components/team/team.component';
 
 const routes: Routes = [
   {path : ''                   , component : HomeComponent          },
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path : 'editproduct/:id_'   , component : MainEditproductComponent},
   {path : 'main-actualite'     , component : MainActualiteComponent},
   {path : 'main-addnews'       , component : MainAddnewsComponent},
-  {path : 'editnews/:id'  , component : MainEditnewsComponent}
+  {path : 'editnews/:id'       , component : MainEditnewsComponent},
+  {path : 'test'               , component : TeamComponent }
 ];
 
 @NgModule({
