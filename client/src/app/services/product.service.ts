@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient , HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Product } from '../Product';
 
 
 const httpOptions = {
@@ -20,7 +21,21 @@ export class ProductService {
 
   private apiUrl =  'http://localhost:5000/api/products';
 
-  getProducts() : Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+  getProducts() : Observable<Product[]> {
+    return this.http.get<Product[]>(this.apiUrl);
+  }
+
+  addProduct(product : Product) : Observable<Product>{
+    return this.http.post<Product>(this.apiUrl, product,httpOptions);
+  }
+
+  getSingleProduct(id : string) : Observable<Product>{
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
+
+  updateProduct(id : string , product : Product) : Observable<Product>{
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.put<Product>(url,product,httpOptions);
   }
 }

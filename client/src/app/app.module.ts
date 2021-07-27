@@ -34,6 +34,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
 import { MainProductComponent } from './pages/main-product/main-product.component';
 import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
+import { MainEditproductComponent } from './pages/main-editproduct/main-editproduct.component';
 
 
 
@@ -63,6 +64,7 @@ import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct
     AdminProductsComponent,
     MainProductComponent,
     MainAddproductComponent,
+    MainEditproductComponent,
 
   ],
   imports: [

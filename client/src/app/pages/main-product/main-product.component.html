@@ -25,22 +25,22 @@
     <div class="down">
         <h1>Products</h1>
         <div class="table">
-                
+
             <table style="width:100%">
               <tr>
                 <th>Product Name</th>
-                <th>Price</th> 
+                <th>Price</th>
                 <th>Edit-Delete</th>
               </tr>
-              <tr>
-                <td>Revit</td>
-                <td>1200$</td>
+              <tr *ngFor="let product of Products">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
                 <td>
-                  <button class="btn1">Delete</button>
-                  <button class="btn2">Edit</button>
+                  <a class="btn1" [routerLink]="['/editproduct', product._id]">Delete</a>
+                  <a class="btn2" [routerLink]="['/editproduct', product._id]">Edit</a>
                 </td>
               </tr>
-              <tr>
+            <!-- <tr>
                 <td>Autocad</td>
                 <td>800$</td>
                 <td>
@@ -55,7 +55,7 @@
                   <button class="btn1">Delete</button>
                   <button class="btn2">Edit</button>
                 </td>
-              </tr>
+              </tr>-->
             </table>
         </div>
 

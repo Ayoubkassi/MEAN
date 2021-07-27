@@ -3,23 +3,32 @@ import { ProductService } from 'src/app/services/product.service';
 import { Product  } from '../../Product';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 
-
-
 @Component({
-  selector: 'app-main-addproduct',
-  templateUrl: './main-addproduct.component.html',
-  styleUrls: ['./main-addproduct.component.scss']
+  selector: 'app-main-editproduct',
+  templateUrl: './main-editproduct.component.html',
+  styleUrls: ['./main-editproduct.component.scss']
 })
-export class MainAddproductComponent implements OnInit {
+export class MainEditproductComponent implements OnInit {
+
+  Product : any;
+  id : string = "";
 
   Name : string = "" ;
   Price : string = "";
   Image : string = "";
 
   constructor(private productService : ProductService,
-            private router : Router) { }
+            private router : Router,
+            private route: ActivatedRoute) {
+              this.route.params.subscribe( params => this.id = params.id_)
+            }
 
   ngOnInit(): void {
+    this.productService.getSingleProduct(this.id).subscribe((product)=>{
+      this.Product = product;
+      this.Name = this.Product.name;
+      this.Price = this.Product.price;
+    })
   }
 
   onSubmit(){
@@ -37,7 +46,7 @@ export class MainAddproductComponent implements OnInit {
       image : this.Image
     }
 
-   this.productService.addProduct(product).subscribe((product)=> {
+   this.productService.updateProduct(id,product).subscribe((product)=> {
       console.log(product);
       this.router.navigate(['main-products']);
     });
@@ -52,9 +61,6 @@ export class MainAddproductComponent implements OnInit {
     this.Image= event.target.files[0].name;
     console.log(this.Image);
   }
-
-
-
 
 
 

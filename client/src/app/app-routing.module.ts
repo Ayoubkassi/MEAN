@@ -9,6 +9,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AdminProductsComponent } from './pages/admin-products/admin-products.component';
 import { MainProductComponent } from './pages/main-product/main-product.component';
 import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
+import { MainEditproductComponent } from './pages/main-editproduct/main-editproduct.component';
 
 const routes: Routes = [
   {path : ''          ,     component : HomeComponent          },
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path : 'dashboard' ,     component : DashboardComponent     },
   {path : 'main'      ,     component : AdminProductsComponent },
   {path : 'main-products',  component : MainProductComponent   },
-  {path : 'main-addproduct',component : MainAddproductComponent}
+  {path : 'main-addproduct',component : MainAddproductComponent},
+  {path : 'editproduct/:id_',component : MainEditproductComponent}
 ];
 
 @NgModule({

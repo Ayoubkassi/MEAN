@@ -90,6 +90,11 @@ router.get('/', /*passport.authenticate('jwt', {session:false}),*/(req,res,next)
             .then(products => res.json(products))
 });
 
+router.get('/:id',(req,res)=>{
+  Product.findById(req.params.id)
+  .then(product => res.json(product))
+});
+
 
 router.post('/',(req,res)=>{
 

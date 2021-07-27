@@ -23,10 +23,10 @@
     </div>
 
     <div class="down">
-        <h1>Add Product</h1>
+        <h1>Edit Product</h1>
         <div class="form">
           <form class="add-form" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Product Name" name="Name" [(ngModel)]="Name"  class="inp">
+            <input type="text" placeholder="Product Name"  name="Name" [(ngModel)]="Name"  class="inp">
             <input type="text" placeholder="Product Price" name="Price" [(ngModel)]="Price"  class="inp">
             <br/><br/>
             <label for="file" class="label-file">Choisir une image</label>
@@ -36,7 +36,7 @@
 
 
 
-            <button type="submit" class="sub">Add Product</button>
+            <button type="submit" class="sub" >Update Product</button>
         </form>
         </div>
 
