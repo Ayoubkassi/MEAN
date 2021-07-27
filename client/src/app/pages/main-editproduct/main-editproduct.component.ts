@@ -46,7 +46,7 @@ export class MainEditproductComponent implements OnInit {
       image : this.Image
     }
 
-   this.productService.updateProduct(id,product).subscribe((product)=> {
+   this.productService.updateProduct(this.id,product).subscribe((product)=> {
       console.log(product);
       this.router.navigate(['main-products']);
     });

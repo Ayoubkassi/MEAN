@@ -38,4 +38,9 @@ export class ProductService {
     const url = `${this.apiUrl}/${id}`;
     return this.http.put<Product>(url,product,httpOptions);
   }
+
+  deleteProduct(id : string){
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete(url);
+  }
 }

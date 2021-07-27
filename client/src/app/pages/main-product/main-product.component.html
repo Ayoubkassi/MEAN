@@ -36,7 +36,7 @@
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>
-                  <a class="btn1" [routerLink]="['/editproduct', product._id]">Delete</a>
+                  <button class="btn1" (click)="deleteProduct(product._id)">Delete</button>
                   <a class="btn2" [routerLink]="['/editproduct', product._id]">Edit</a>
                 </td>
               </tr>

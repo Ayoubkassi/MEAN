@@ -88,6 +88,10 @@
                     border-collapse: collapse;
                     text-align : center;
 
+                    a{
+                      text-decoration: none;
+                    }
+
                       .btn1{
                         background-color : #30BCED;
                         padding : 10px 22px;
@@ -120,7 +124,7 @@
                  }
 
                  th, td {
-                    padding: 9px;
+                    padding:9px;
                         }
           }
 
@@ -141,9 +145,9 @@
                           }
                       }
 
-          
-           
-           
+
+
+
 
         }
     }
