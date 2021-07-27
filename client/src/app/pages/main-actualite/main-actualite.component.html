@@ -6,7 +6,7 @@
         <div class="links">
           <a href="main-products">Products</a>
           <a href="">Subjects</a>
-          <a href="" class="active">Actualite</a>
+          <a href="main-actualite" class="active">Actualite</a>
         </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
                 <th>Edit-Delete</th>
               </tr>
               <tr *ngFor="let news of News">
-                <td>{{news.name}}</td>
+                <td>{{news.title}}</td>
                 <td>
                   <button class="btn1" (click)="deleteNews(news._id)">Delete</button>
                   <a class="btn2" [routerLink]="['/editnews', news._id]">Edit</a>
@@ -57,7 +57,7 @@
             </table>
         </div>
 
-        <a class="btn1" href="main-addproduct">Add News</a>
+        <a class="btn1" href="main-addnews">Add News</a>
     </div>
   </div>
 </div>

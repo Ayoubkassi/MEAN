@@ -34,7 +34,7 @@ export class NewsService {
     return this.http.get<News>(url);
   }
 
-  updateProduct(id : string , news : News) : Observable<News>{
+  updateNews(id : string , news : News) : Observable<News>{
     const url = `${this.apiUrl}/${id}`;
     return this.http.put<News>(url,news,httpOptions);
   }

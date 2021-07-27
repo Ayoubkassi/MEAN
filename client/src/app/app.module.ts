@@ -36,6 +36,8 @@ import { MainProductComponent } from './pages/main-product/main-product.componen
 import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
 import { MainEditproductComponent } from './pages/main-editproduct/main-editproduct.component';
 import { MainActualiteComponent } from './pages/main-actualite/main-actualite.component';
+import { MainAddnewsComponent } from './pages/main-addnews/main-addnews.component';
+import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.component';
 
 
 
@@ -67,6 +69,8 @@ import { MainActualiteComponent } from './pages/main-actualite/main-actualite.co
     MainAddproductComponent,
     MainEditproductComponent,
     MainActualiteComponent,
+    MainAddnewsComponent,
+    MainEditnewsComponent,
 
   ],
   imports: [

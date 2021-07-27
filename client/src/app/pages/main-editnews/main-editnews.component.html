@@ -23,11 +23,12 @@
     </div>
 
     <div class="down">
-        <h1>Edit Product</h1>
+        <h1>Edit News</h1>
         <div class="form">
           <form class="add-form" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Product Name"  name="Name" [(ngModel)]="Name"  class="inp">
-            <input type="text" placeholder="Product Price" name="Price" [(ngModel)]="Price"  class="inp">
+            <input type="text" placeholder="News Title" name="Title" [(ngModel)]="Title"  class="inp">
+            <textarea name="Content" [(ngModel)]="Content" placeholder="News Content" id="area"></textarea>
+
             <br/><br/>
             <label for="file" class="label-file">Choisir une image</label>
             <input id="file" class="input-file" type="file"  (change)="onFileSelected($event)">
@@ -36,7 +37,7 @@
 
 
 
-            <button type="submit" class="sub" >Update Product</button>
+            <button type="submit" class="sub" >Update News</button>
         </form>
         </div>
 
