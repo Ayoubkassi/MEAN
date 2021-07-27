@@ -10,18 +10,20 @@ import { AdminProductsComponent } from './pages/admin-products/admin-products.co
 import { MainProductComponent } from './pages/main-product/main-product.component';
 import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
 import { MainEditproductComponent } from './pages/main-editproduct/main-editproduct.component';
+import { MainActualiteComponent } from './pages/main-actualite/main-actualite.component';
 
 const routes: Routes = [
-  {path : ''          ,     component : HomeComponent          },
-  {path : 'Contact'   ,     component : ContactComponent       },
-  {path : 'Actualite' ,     component : ActualiteComponent     },
-  {path : 'Solutions' ,     component : ProductsComponent      },
-  {path : 'admin'     ,     component : AdminComponent         },
-  {path : 'dashboard' ,     component : DashboardComponent     },
-  {path : 'main'      ,     component : AdminProductsComponent },
-  {path : 'main-products',  component : MainProductComponent   },
-  {path : 'main-addproduct',component : MainAddproductComponent},
-  {path : 'editproduct/:id_',component : MainEditproductComponent}
+  {path : ''                   , component : HomeComponent          },
+  {path : 'Contact'            , component : ContactComponent       },
+  {path : 'Actualite'          , component : ActualiteComponent     },
+  {path : 'Solutions'          , component : ProductsComponent      },
+  {path : 'admin'              , component : AdminComponent         },
+  {path : 'dashboard'          , component : DashboardComponent     },
+  {path : 'main'               , component : AdminProductsComponent },
+  {path : 'main-products'      , component : MainProductComponent   },
+  {path : 'main-addproduct'    , component : MainAddproductComponent},
+  {path : 'editproduct/:id_'   , component : MainEditproductComponent},
+  {path : 'main-actualite'     , component : MainActualiteComponent}
 ];
 
 @NgModule({

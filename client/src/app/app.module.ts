@@ -35,6 +35,7 @@ import { AdminProductsComponent } from './pages/admin-products/admin-products.co
 import { MainProductComponent } from './pages/main-product/main-product.component';
 import { MainAddproductComponent } from './pages/main-addproduct/main-addproduct.component';
 import { MainEditproductComponent } from './pages/main-editproduct/main-editproduct.component';
+import { MainActualiteComponent } from './pages/main-actualite/main-actualite.component';
 
 
 
@@ -65,6 +66,7 @@ import { MainEditproductComponent } from './pages/main-editproduct/main-editprod
     MainProductComponent,
     MainAddproductComponent,
     MainEditproductComponent,
+    MainActualiteComponent,
 
   ],
   imports: [

@@ -1,0 +1,63 @@
+<div class="admin">
+  <div class="left">
+    <h2>Smarden Admin</h2>
+    <div class="items">
+      <h3>Dashboard</h3>
+        <div class="links">
+          <a href="main-products">Products</a>
+          <a href="">Subjects</a>
+          <a href="" class="active">Actualite</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="top">
+      <div class="search">
+        <app-input-form label="Seach here..." [ngStyle]="{'border-radius':'40px'}"></app-input-form>
+      </div>
+
+      <div class="info">
+        <img src="../../../assets/notification.png" alt="">
+      </div>
+    </div>
+
+    <div class="down">
+        <h1>Actualite</h1>
+        <div class="table">
+
+            <table style="width:100%">
+              <tr>
+                <th>News Name</th>
+                <th>Edit-Delete</th>
+              </tr>
+              <tr *ngFor="let news of News">
+                <td>{{news.name}}</td>
+                <td>
+                  <button class="btn1" (click)="deleteNews(news._id)">Delete</button>
+                  <a class="btn2" [routerLink]="['/editnews', news._id]">Edit</a>
+                </td>
+              </tr>
+            <!-- <tr>
+                <td>Autocad</td>
+                <td>800$</td>
+                <td>
+                  <button class="btn1">Delete</button>
+                  <button class="btn2">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Forge</td>
+                <td>900$</td>
+                <td>
+                  <button class="btn1">Delete</button>
+                  <button class="btn2">Edit</button>
+                </td>
+              </tr>-->
+            </table>
+        </div>
+
+        <a class="btn1" href="main-addproduct">Add News</a>
+    </div>
+  </div>
+</div>
