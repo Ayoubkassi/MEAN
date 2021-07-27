@@ -28,6 +28,7 @@ export class MainEditproductComponent implements OnInit {
       this.Product = product;
       this.Name = this.Product.name;
       this.Price = this.Product.price;
+      this.Image = this.Product.image;
     })
   }
 
@@ -36,10 +37,10 @@ export class MainEditproductComponent implements OnInit {
       alert("Please Enter Product Name");
       return;
     }
-    if(!this.Price){
+  /*  if(!this.Price){
       alert("Please Enter Product Price");
       return;
-    }
+    }*/
     const product = {
       name : this.Name,
       price : this.Price,

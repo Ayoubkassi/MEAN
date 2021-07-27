@@ -4,8 +4,8 @@
 	display : flex;
 	flex-direction : column;
 	align-items : center;
-	justify-content : center;
-	
+	justify-content : end;
+
 	img{
 		height:18%;
 		width:80%;
@@ -17,7 +17,7 @@
 		text-align:center;
 		width : 80%;
 
-		h3{
+		h4{
 			color : #66c3FF;
 
 		}
@@ -43,7 +43,7 @@
 
 	&:hover {
 		.info {
-			h3 {
+			h4 {
 				color : black;
 			}
 		}

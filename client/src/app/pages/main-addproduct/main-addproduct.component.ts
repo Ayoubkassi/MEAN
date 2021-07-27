@@ -27,10 +27,10 @@ export class MainAddproductComponent implements OnInit {
       alert("Please Enter Product Name");
       return;
     }
-    if(!this.Price){
+  /*  if(!this.Price){
       alert("Please Enter Product Price");
       return;
-    }
+    }*/
     const product = {
       name : this.Name,
       price : this.Price,
