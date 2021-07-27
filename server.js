@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const subjects = require('./routes/api/subjects');
 const products = require('./routes/api/products');
+const news     = require('./routes/api/news');
 
 const app = express();
 
@@ -50,6 +51,7 @@ connectDB();
 
 app.use('/api/subjects',subjects);
 app.use('/api/products',products);
+app.use('/api/news',news);
 
 // Passport Middleware
 app.use(passport.initialize());
