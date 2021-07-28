@@ -5,7 +5,9 @@
     </div>
     <img src='../../../assets/{{news.image}}'>
     <div class="footer">
-        <p>{{news.content}}</p>
-        <button class="btn">Voir plus</button>
+        <p>{{news.content.split(' ').slice(0,20).join(' ')}}  ...</p>
+        <div class="link">
+          <a class="btn" [routerLink]="['/news', news._id]">Voir plus</a>
+        </div>
     </div>
 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit , Input } from '@angular/core';
 import { News  } from '../../News';
+import { NewsService } from 'src/app/services/news.service';
+import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-news-box',
@@ -9,6 +11,7 @@ import { News  } from '../../News';
 export class NewsBoxComponent implements OnInit {
 
   @Input() news : any;
+
 
   constructor() { }
 

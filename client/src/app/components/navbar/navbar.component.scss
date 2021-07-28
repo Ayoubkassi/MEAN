@@ -69,8 +69,8 @@ $main-color : #66C3FF;
 
                             }
 
-                           
-                            
+
+
 
                         }
 
@@ -78,9 +78,9 @@ $main-color : #66C3FF;
 
                         @keyframes continue {
     0%   { width: 0%; }
-    
+
     /*50%  { width: 50%; }*/
- 
+
     100% { width: 100%; }
   }
 
@@ -92,7 +92,8 @@ li{
     height: 150%;
 
 
-    &:hover .item .sub-menu1{
+    &:hover .item .sub-menu1,
+    &:hover .item .sub-menu2{
         display: block;
        /* position: absolute;*/
         background: #fff;
@@ -103,14 +104,14 @@ li{
         ul{
             display: block;
             margin : 6px;
-            
+
         }
     }
 
 .item{
     padding : 8px 0;
 
-    
+
     .sub-menu1{
         display: none;
         width: 240px;
@@ -131,16 +132,41 @@ li{
                         border-bottom: 2px solid rgb(245, 144, 12);
                     }
                 }
-          
+
         }
     }
 
-    
+
+    .sub-menu2{
+        display: none;
+        width: 210px;
+        padding: 10px;
+        box-shadow: 12px 0 15px -4px rgba(185, 189, 194, 0.8),
+         -12px 0 8px -4px rgba(185, 189, 194, 0.8);
+         position: absolute;
+         margin-top: 10%;
+        li{
+            list-style-type: none;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 300;
+                a{
+                    text-decoration: none;
+                    color : black;
+                    &:hover{
+                        border-bottom: 2px solid rgb(245, 144, 12);
+                    }
+                }
+
+        }
+    }
+
+
 }
 
 }
     }
-    
+
     .logo {
         flex-basis: 27%;
         width: 27%;

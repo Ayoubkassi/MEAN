@@ -40,6 +40,7 @@ import { MainAddnewsComponent } from './pages/main-addnews/main-addnews.componen
 import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.component';
 import { TeamComponent } from './components/team/team.component';
 import { SingleNewComponent } from './pages/single-new/single-new.component';
+import { FeaturesComponent } from './components/features/features.component';
 
 
 
@@ -75,6 +76,7 @@ import { SingleNewComponent } from './pages/single-new/single-new.component';
     MainEditnewsComponent,
     TeamComponent,
     SingleNewComponent,
+    FeaturesComponent,
 
   ],
   imports: [

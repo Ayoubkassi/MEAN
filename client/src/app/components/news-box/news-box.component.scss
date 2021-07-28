@@ -24,19 +24,26 @@
             color : #3a3a3a;
         }
 
-        .btn{
-            background-color : black;
-            padding : 10px 20px;
-            color:#fff;
-            border : none;
-            outline : none;
-            border-radius : 3px;
-            margin-top : 10px;
+        .link{
+          margin-top : 20px;
 
-                &:hover{
-                    background-color : #444444;
-                    cursor : pointer;
-                }
+          .btn{
+              background-color : black;
+              color:#fff;
+              border : none;
+              outline : none;
+              border-radius : 3px;
+              text-decoration: none;
+              padding : 10px 20px;
+
+
+                  &:hover{
+                      background-color : #444444;
+                      cursor : pointer;
+                  }
+          }
+
         }
+
     }
 }
