@@ -5,9 +5,11 @@
 	flex-wrap : wrap;
 	background : #161623;
 	min-height : 100vh;
+	position : relative;
+
+
 
 	section {
-		/*position : relative;*/
 
 		&::before{
 			content : '';
@@ -16,7 +18,7 @@
 			left : 0;
 			width : 100%;
 			height : 100%;
-			background : linear-gradient(#2196f3,#e91e63);
+			background : linear-gradient(#000,rgb(102, 195, 255));
 			clip-path : circle(30% at right 70%);
 		}
 
@@ -27,7 +29,7 @@
 			left : 0;
 			width : 100%;
 			height : 100%;
-			background : linear-gradient(#f00,#f0f);
+			background : linear-gradient(#fff,rgb(230,230,230));
 			clip-path : circle(20% at 10% 10%);
 
 		}
@@ -39,7 +41,7 @@
 			justify-content : center;
 			align-items : center;
 			flex-wrap : wrap;
-			margin : 40px 0;
+			margin : 80px 0;
 
 			.card{
 				position : relative;
@@ -121,6 +123,7 @@
 						img{
 							height : 30px;
 							width : 30px;
+							margin-right: 10px;
 						}
 					}
 				}

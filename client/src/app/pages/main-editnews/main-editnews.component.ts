@@ -20,11 +20,13 @@ export class MainEditnewsComponent implements OnInit {
   constructor(private newsService : NewsService,
             private router : Router,
             private route: ActivatedRoute) {
-              this.route.params.subscribe( params => this.id = params.id_)
+              this.route.params.subscribe( params => this.id = params.id )
             }
 
   ngOnInit(): void {
     this.newsService.getSingleNews(this.id).subscribe((news)=>{
+      console.log(news);
+
       this.News = news;
       this.Title = this.News.title;
       this.Content = this.News.content;

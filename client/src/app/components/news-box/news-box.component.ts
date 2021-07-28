@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
+import { News  } from '../../News';
 
 @Component({
   selector: 'app-news-box',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news-box.component.scss']
 })
 export class NewsBoxComponent implements OnInit {
+
+  @Input() news : any;
 
   constructor() { }
 

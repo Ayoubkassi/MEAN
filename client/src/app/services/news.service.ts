@@ -39,6 +39,7 @@ export class NewsService {
     return this.http.put<News>(url,news,httpOptions);
   }
 
+
   deleteNews(id : string){
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);

@@ -39,6 +39,7 @@ import { MainActualiteComponent } from './pages/main-actualite/main-actualite.co
 import { MainAddnewsComponent } from './pages/main-addnews/main-addnews.component';
 import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.component';
 import { TeamComponent } from './components/team/team.component';
+import { SingleNewComponent } from './pages/single-new/single-new.component';
 
 
 
@@ -73,6 +74,7 @@ import { TeamComponent } from './components/team/team.component';
     MainAddnewsComponent,
     MainEditnewsComponent,
     TeamComponent,
+    SingleNewComponent,
 
   ],
   imports: [

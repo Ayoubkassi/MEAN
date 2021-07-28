@@ -11,23 +11,19 @@
             <app-news-box></app-news-box>
         </div>
     </div> -->
- 
+
         <div class="first">
             <app-navbar></app-navbar>
             <h1>Actualite</h1>
         </div>
         <div class="second">
             <div class=boxes>
-                <app-news-box class="box"></app-news-box>
-                <app-news-box class="box"></app-news-box>
-                <app-news-box class="box"></app-news-box>
-
-
+                <app-news-box class="box" *ngFor="let news of News" [news]="news"></app-news-box>
             </div>
         </div>
 
 
-    
-    
+
+
 
   </div>
