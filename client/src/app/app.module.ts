@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AgmCoreModule } from '@agm/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -41,6 +44,7 @@ import { MainEditnewsComponent } from './pages/main-editnews/main-editnews.compo
 import { TeamComponent } from './components/team/team.component';
 import { SingleNewComponent } from './pages/single-new/single-new.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { Team2Component } from './components/team2/team2.component';
 
 
 
@@ -77,6 +81,7 @@ import { FeaturesComponent } from './components/features/features.component';
     TeamComponent,
     SingleNewComponent,
     FeaturesComponent,
+    Team2Component,
 
   ],
   imports: [
@@ -90,7 +95,8 @@ import { FeaturesComponent } from './components/features/features.component';
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,6 +15,7 @@ import { MainAddnewsComponent }           from './pages/main-addnews/main-addnew
 import { MainEditnewsComponent }          from './pages/main-editnews/main-editnews.component';
 import { SingleNewComponent }             from './pages/single-new/single-new.component';
 import {FeaturesComponent}                from './components/features/features.component';
+import { Team2Component }                 from './components/team2/team2.component';
 
 const routes: Routes = [
   {path : ''                   , component : HomeComponent          },
@@ -31,7 +32,8 @@ const routes: Routes = [
   {path : 'main-addnews'       , component : MainAddnewsComponent},
   {path : 'editnews/:id'       , component : MainEditnewsComponent},
   {path : 'news/:id'           , component : SingleNewComponent },
-  {path : 'test'               , component : FeaturesComponent}
+  {path : 'test'               , component : FeaturesComponent},
+  {path : 'test2'              , component : Team2Component}
 ];
 
 @NgModule({
