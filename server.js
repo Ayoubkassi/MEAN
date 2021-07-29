@@ -56,7 +56,7 @@ app.use('/api/news',news);
 
 //static path
 
-app.use(express.static(__dirname+/"/client/dist"))
+//app.use(express.static(__dirname+/"/client/dist"))
 // Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
