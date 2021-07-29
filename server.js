@@ -58,7 +58,11 @@ app.use('/api/news',news);
 
 //app.use(express.static(__dirname+/"/client/dist"))
 
-app.use('/', express.static(__dirname + '/client/dist'));
+app.use('/', express.static(__dirname + '/client/dist/smarden'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/dist/smarden/index.html'));
+});
 
 
 // Passport Middleware
