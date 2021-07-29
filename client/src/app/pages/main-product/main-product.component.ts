@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product  } from '../../Product';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({
@@ -12,7 +13,8 @@ import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class MainProductComponent implements OnInit {
 
   Products : any;
-  constructor(private productService : ProductService,
+  constructor(private authService:AuthService,
+            private productService : ProductService,
               private router : Router) { }
 
   ngOnInit(): void {
@@ -30,6 +32,11 @@ export class MainProductComponent implements OnInit {
 
 
   }
+  }
+
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['/admin']);
   }
 
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { News  } from '../../News';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-main-addnews',
@@ -14,7 +16,8 @@ export class MainAddnewsComponent implements OnInit {
   Content : string = "";
   Image : string = "";
 
-  constructor(private newsService : NewsService,
+  constructor(private authService:AuthService,
+              private newsService : NewsService,
             private router : Router) { }
 
   ngOnInit(): void {
@@ -49,6 +52,11 @@ export class MainAddnewsComponent implements OnInit {
   onFileSelected(event : any){
     this.Image= event.target.files[0].name;
     console.log(this.Image);
+  }
+
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['/admin']);
   }
 
 

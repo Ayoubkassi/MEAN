@@ -19,6 +19,13 @@
           padding: 0 10px;
           color: #30BCED;
 
+          h3 {
+            a{
+              text-decoration: none;
+              color :#30BCED ;
+            }
+          }
+
             .links{
               padding: 0 15px;
               display: flex;
@@ -64,6 +71,9 @@
             .info{
               flex-basis: 40%;
               border-left: 1px solid white;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
                 img{
                   width: 40px;
                   height: 40px;
@@ -71,7 +81,28 @@
                   margin-right: 30px;
                   cursor: pointer;
                 }
+
+              button{
+                background-color: transparent;
+                color: white;
+                padding: 15px 60px;
+                text-decoration: none;
+                font-size: 1.35rem;
+                font-weight: 500;
+              /*  margin-top: 100px;*/
+                border : none;
+                outline : none;
+                cursor : pointer;
+                float : right;
             }
+
+            a{
+              text-decoration: none;
+              color: white;
+              font-size: 1.35rem;
+              font-weight: 500;
+            }
+          }
 
         }
 

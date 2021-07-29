@@ -31,6 +31,13 @@
         height: 80px;
         position: absolute;
         bottom: 0%;
+        z-index: 1000;
+
+          a{
+            text-decoration: none;
+            color : #bdbdbd;
+            cursor: auto;
+          }
     }
 
 

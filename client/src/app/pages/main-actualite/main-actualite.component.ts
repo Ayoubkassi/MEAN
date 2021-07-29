@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { News  } from '../../News';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-main-actualite',
@@ -11,7 +13,8 @@ import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class MainActualiteComponent implements OnInit {
 
   News : any;
-  constructor(private newsService : NewsService,
+  constructor(private authService:AuthService,
+            private newsService : NewsService,
               private router : Router) { }
 
   ngOnInit(): void {
@@ -29,6 +32,11 @@ export class MainActualiteComponent implements OnInit {
 
 
   }
+  }
+
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['/admin']);
   }
 
 }

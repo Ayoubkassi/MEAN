@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product  } from '../../Product';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 
 
@@ -16,7 +18,8 @@ export class MainAddproductComponent implements OnInit {
   Price : string = "";
   Image : string = "";
 
-  constructor(private productService : ProductService,
+  constructor(private authService:AuthService,
+            private productService : ProductService,
             private router : Router) { }
 
   ngOnInit(): void {
@@ -51,6 +54,11 @@ export class MainAddproductComponent implements OnInit {
   onFileSelected(event : any){
     this.Image= event.target.files[0].name;
     console.log(this.Image);
+  }
+
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['/admin']);
   }
 
 

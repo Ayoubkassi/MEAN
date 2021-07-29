@@ -2,11 +2,11 @@
   <div class="left">
     <h2>Smarden Admin</h2>
     <div class="items">
-      <h3>Dashboard</h3>
+      <h3><a [routerLink]="['/main']">Dashboard</a></h3>
         <div class="links">
-          <a href="main-products">Products</a>
-          <a href="">Subjects</a>
-          <a href="main-actualite">Actualite</a>
+          <a [routerLink]="['/main-products']" >Products</a>
+        <!--  <a [routerLink]="['/']">Emails</a> -->
+          <a [routerLink]="['/main-actualite']" >Actualite</a>
         </div>
     </div>
   </div>
@@ -18,6 +18,8 @@
       </div>
 
       <div class="info">
+        <a [routerLink]="['/']">Home</a>
+        <button mdbBtn color="primary" size="lg" (click)="onClick()" role="button" mdbWavesEffect>Logout</button>
         <img src="../../../assets/notification.png" alt="">
       </div>
     </div>
@@ -45,7 +47,7 @@
           <div class="subject">
             <img src="../../../assets/book.png" alt="">
             <div>
-              <h2>Sujets</h2>
+              <h2>Emails</h2>
               <h2>127</h2>
             </div>
           </div>

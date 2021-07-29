@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { News  } from '../../News';
 import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-main-editnews',
@@ -17,7 +19,8 @@ export class MainEditnewsComponent implements OnInit {
   Content : string = "";
   Image : string = "";
 
-  constructor(private newsService : NewsService,
+  constructor(private authService:AuthService,
+              private newsService : NewsService,
             private router : Router,
             private route: ActivatedRoute) {
               this.route.params.subscribe( params => this.id = params.id )
@@ -63,6 +66,11 @@ export class MainEditnewsComponent implements OnInit {
   onFileSelected(event : any){
     this.Image= event.target.files[0].name;
     console.log(this.Image);
+  }
+
+  onClick(){
+    this.authService.logout();
+    this.router.navigate(['/admin']);
   }
 
 
