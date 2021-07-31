@@ -68,16 +68,26 @@
 */
 .teams{
 
-  background: linear-gradient(-100deg,white 50%,black 50%);
+/*  background: linear-gradient(-100deg,white 50%,#d2d1cc 50%);*/
+background:url('../../../assets/back3.png');
+
 
 .container{
   width: 90vw;
-  margin: auto;
+  /*margin: auto;*/
   height: 100vh;
+  margin-left: 6%;
+
+    h1{
+      font-size: 50px;
+      text-align: center;
+      margin-top: 5%;
+      margin-right: 4%;
+    }
 
 
 .card{
-  margin-top: 50%;
+  margin-top: 30%;
   width: 26vw ;
   height: 50vh;
   color: white;
@@ -87,14 +97,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #333333;
+  background: #0B0A07;
   text-align: center;
+
+    &:hover .imgBx {
+      transform: translateY(-10%);
+      transition: 0.3s all ease-in-out;
+    }
+
+    &:hover .name{
+      transform: translateY(-10%);
+      transition: 0.3s all ease-in-out;
+
+    }
+
+    &:hover .description{
+      transform: translateY(-10%);
+      transition: 0.3s all ease-in-out;
+
+    }
+
+    &:hover {
+       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+
 
 
   .imgBx{
     flex-basis: 40%;
+    margin-top: 10%;
     height: 40%;
     width: 40%;
+    margin-left: 6%;
       img{
         width: 80%;
         height: 80%;
@@ -107,12 +142,16 @@
     flex-basis: 20%;
     height: 20%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
+    text-align: center;
   }
 
   .description{
     flex-basis: 40%;
     height: 40%;
+    color : #d2d1cc ;
+    font-size: 19px;
+    text-align: center;
   }
 }
 
