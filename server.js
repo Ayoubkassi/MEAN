@@ -57,12 +57,17 @@ app.use('/api/news',news);
 //static path
 
 //app.use(express.static(__dirname+/"/client/dist"))
-
-app.use('/', express.static(__dirname + '/client/dist/smarden'));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/dist/smarden/index.html'));
+app.use((req,res,next)=>{
+  res.status(404).render('404.html');
 });
+
+
+//app.use('/', express.static(__dirname + '/client/dist/smarden'));
+
+/*app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/dist/smarden/index.html'));
+});*/
+
 
 
 
