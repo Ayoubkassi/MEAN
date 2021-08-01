@@ -17,5 +17,34 @@ $main-color : #66C3FF;
         line-height: 32px;
     }
 
-    
+
+}
+
+@media only screen and (max-width: 1128px){
+  .service-item{
+      img{
+        width: 70px;
+        height: 70px;
+      }
+
+      .text{
+        font-size: 16px;
+      }
+  }
+}
+
+@media only screen and (max-width: 851px){
+  .service-item{
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      h2{
+        font-size: 18px;
+      }
+
+      .text{
+        font-size: 14px;
+      }
+  }
 }

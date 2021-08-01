@@ -23,7 +23,8 @@ export const SERVICES : Service[] = [
         id : 4,
         Img : "../assets/service4.png",
         title : "Management de projets BIM",
-        text : "Nous proposons ces prestations dans le cadre de vos projets, ou d’une réponse à un appel d’offres en co-traitance. Nous sommes également à même de vous accompagner sur des prestations d’assistance à maîtrise d’ouvrage, de coordination BIM ou de modélisations."
+        //text : "Nous proposons ces prestations dans le cadre de vos projets, ou d’une réponse à un appel d’offres en co-traitance. Nous sommes également à même de vous accompagner sur des prestations d’assistance à maîtrise d’ouvrage, de coordination BIM ou de modélisations."
+        text : "Nous proposons ces prestations dans le cadre de vos projets, ou d’une réponse à un appel d’offres en co-traitance. Nous sommes également à même de vous accompagner sur des prestations d’assistance à maîtrise d’ouvrage."
     },
     {
         id : 5,
