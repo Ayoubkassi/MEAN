@@ -15,13 +15,22 @@
     #img2{
        background: url('../../../assets/suppor1.jpg');
        background-position: center center;
+       min-height: 300px;
     }
 
     #img1{
         background: url('../../../assets//suppor2.jpg');
         background-size: cover;
+        min-height: 300px;
+
 
     }
 
-    
+
+}
+
+@media only screen and (max-width: 699px){
+  .support{
+    grid-template-columns: 1fr;
+  }
 }

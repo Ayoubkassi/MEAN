@@ -92,6 +92,7 @@
       position: relative;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
         .card{
           position: relative;
@@ -185,4 +186,17 @@
 
         }
     }
+}
+
+
+@media only screen and (max-width: 914px){
+  .features{
+    .container{
+      justify-content: center;
+
+      &:first-child{
+        margin-right: 20px;
+      }
+    }
+  }
 }
