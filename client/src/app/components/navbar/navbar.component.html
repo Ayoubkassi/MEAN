@@ -2,7 +2,7 @@
     <div class="logo">
         <img src="../../../assets/logo-retina.png" alt="">
     </div>
-    <div class="items" >
+    <div class="items"  [ngClass]="status ? 'active' : ''">
        <!-- <app-navbar-item *ngFor="let item of navbarItems" [item] ="item"></app-navbar-item> -->
        <li>
            <a [routerLink]="['/']" class="item">Accueil</a>
@@ -77,6 +77,9 @@
            <a [routerLink]="['/']" class="item">Quiz</a>
     </li>
 
+
+    </div>
+    <div id="toggle" (click)="toggle()" [ngClass]="status ? 'active' : ''">
 
     </div>
 </nav>

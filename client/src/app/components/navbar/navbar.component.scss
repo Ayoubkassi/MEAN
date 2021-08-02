@@ -6,13 +6,14 @@ $main-color : #66C3FF;
     display: flex;
     justify-content: space-between;
     max-width: 100vw;
-    padding: 10px 0px 0 70px;
+    padding: 10px 0px 0 50px;
     align-items: center;
     /*border-bottom: 1px solid black;*/
     z-index: 2;
     background-color: transparent;
     list-style-type: none;
     align-items : center;
+
 
 
     .logo{
@@ -33,7 +34,11 @@ $main-color : #66C3FF;
         width: 90%;
         display: flex;
         justify-content: space-around;
-        margin-right: 3%;
+        margin-right: 5%;
+        display: none;
+          &.active{
+            display: flex;
+          }
 
                                         .item{
                             font-weight: 450;
@@ -171,4 +176,116 @@ li{
         flex-basis: 27%;
         width: 27%;
     }
+
+    #toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #9051ff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ;
+    display: none;
+    z-index: 200;
+
+    &.active{
+      background: #f72286;
+    }
+
+      &.active::before{
+        transform: translateY(0px)rotate(45deg);
+      }
+
+      &.active::after{
+        transform: translateY(0px)rotate(-45deg);
+
+      }
+          &::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transform: translateY(-5px);
+        transition: 0.2s ;
+    }
+
+            &::after{
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background: #fff;
+          transform: translateY(5px);
+          transition: 0.2s ;
+      }
+
+
+
+    }
+}
+
+@media (max-width : 1053px){
+  .navbar{
+
+    .items{
+      /*display: none;*/
+    }
+    #toggle{
+      display: flex;
+    }
+  }
+}
+
+@media (max-width : 1010px){
+  .items{
+       position: fixed;
+       bottom: -100%;
+       right: 0;
+       width: 100%!important;
+       transition : 0.5s;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background : #fff;
+       z-index: 1000;
+       margin-right :0%!important;
+       padding: 20px 0;
+
+       .item{
+         .sub-menu1{
+
+         }
+         .sub-menu2{
+           right: -100%;
+         }
+       }
+        a.item{
+          color : black!important;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+
+       &.active{
+         height: 100vh;
+         bottom: 0;
+         width: 100%;
+       }
+
+
+   }
+
+   #toggle.active{
+     z-index: 2100!important;
+     position: fixed!important;
+   }
+
+
+
 }

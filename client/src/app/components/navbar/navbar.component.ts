@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   navbarItems : string[] = ["Accueil","Actualite", "Ingénierie", "Solutions" , "SDE BIM", "Contact" , "Recrutement", "Académie","Quiz"];
+  status: boolean = false;
 
   /*[{name : "Accueil",subs : []},
-                        {name :"Actualite",subs : []}, 
+                        {name :"Actualite",subs : []},
                         {name : "Ingénierie", subs : []},
-                        {name : "Solutions", subs : []} , 
-                        {name : "SDE BIM", subs : []}, 
-                        {name : "Contact" , subs : []}, 
+                        {name : "Solutions", subs : []} ,
+                        {name : "SDE BIM", subs : []},
+                        {name : "Contact" , subs : []},
                         {name :"Recrutement" , subs : []},
                         { name :"Académie", subs: []},
                         {name :"Quiz", subs: []}];*/
@@ -22,6 +23,11 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggle():void{
+    this.status = !this.status;
+    console.log(this.status);
   }
 
 }
