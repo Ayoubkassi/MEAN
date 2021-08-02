@@ -8,6 +8,9 @@ $main-color : #0F3E5C;
         top:40%;
         transform: translate(-40%,-50%);
         min-width : 75%;
+        animation-name: continue;
+        animation-duration: 1.2s;
+        transition: left 0.1s ease-in-out;
 
 
     .main-title{
@@ -33,6 +36,16 @@ $main-color : #0F3E5C;
 
 
     }
+
+
+        @keyframes continue {
+        0%   { left: -100%; }
+
+        /*50%  { width: 50%; }*/
+
+        100% { left: 40%; }
+      }
+
 
     p{
         font-size: 24px;

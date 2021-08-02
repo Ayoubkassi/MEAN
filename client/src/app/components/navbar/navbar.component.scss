@@ -35,9 +35,9 @@ $main-color : #66C3FF;
         display: flex;
         justify-content: space-around;
         margin-right: 5%;
-        display: none;
+
           &.active{
-            display: flex;
+
           }
 
                                         .item{
@@ -183,7 +183,7 @@ li{
     right: 0;
     width: 60px;
     height: 60px;
-    background: rgba(102, 195, 255, 0.7);
+    background:  rgba(102, 195, 255, 0.7);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -233,7 +233,11 @@ li{
   .navbar{
 
     .items{
-      /*display: none;*/
+      display: none;
+
+      &.active{
+        display: flex;
+      }
     }
     #toggle{
       display: flex;
