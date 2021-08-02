@@ -183,7 +183,7 @@ li{
     right: 0;
     width: 60px;
     height: 60px;
-    background: #9051ff;
+    background: rgba(102, 195, 255, 0.7);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -193,7 +193,7 @@ li{
     z-index: 200;
 
     &.active{
-      background: #f72286;
+      background: #0F3E5C;
     }
 
       &.active::before{
