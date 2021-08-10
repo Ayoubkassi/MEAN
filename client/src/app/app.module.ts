@@ -45,6 +45,20 @@ import { TeamComponent } from './components/team/team.component';
 import { SingleNewComponent } from './pages/single-new/single-new.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { Team2Component } from './components/team2/team2.component';
+import { IngenierieSdbComponent } from './pages/ingenierie-sdb/ingenierie-sdb.component';
+import { IngenierieRdfComponent } from './pages/ingenierie-rdf/ingenierie-rdf.component';
+import { IngenierieReComponent } from './pages/ingenierie-re/ingenierie-re.component';
+import { IngenierieEaComponent } from './pages/ingenierie-ea/ingenierie-ea.component';
+import { IngenierieCestComponent } from './pages/ingenierie-cest/ingenierie-cest.component';
+import { IngenierieEdcComponent } from './pages/ingenierie-edc/ingenierie-edc.component';
+import { SdeAuditeComponent } from './pages/sde-audite/sde-audite.component';
+import { SdeGpcComponent } from './pages/sde-gpc/sde-gpc.component';
+import { SdeAccompagneComponent } from './pages/sde-accompagne/sde-accompagne.component';
+import { SdeModel3dComponent } from './pages/sde-model3d/sde-model3d.component';
+import { SdeDdcComponent } from './pages/sde-ddc/sde-ddc.component';
+import { AcdemieFormationComponent } from './pages/acdemie-formation/acdemie-formation.component';
+import { AcademieCertifComponent } from './pages/academie-certif/academie-certif.component';
+import { AcademieUtsComponent } from './pages/academie-uts/academie-uts.component';
 
 
 
@@ -82,6 +96,20 @@ import { Team2Component } from './components/team2/team2.component';
     SingleNewComponent,
     FeaturesComponent,
     Team2Component,
+    IngenierieSdbComponent,
+    IngenierieRdfComponent,
+    IngenierieReComponent,
+    IngenierieEaComponent,
+    IngenierieCestComponent,
+    IngenierieEdcComponent,
+    SdeAuditeComponent,
+    SdeGpcComponent,
+    SdeAccompagneComponent,
+    SdeModel3dComponent,
+    SdeDdcComponent,
+    AcdemieFormationComponent,
+    AcademieCertifComponent,
+    AcademieUtsComponent,
 
   ],
   imports: [

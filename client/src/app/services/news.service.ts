@@ -19,7 +19,7 @@ export class NewsService {
 
   constructor(private http:HttpClient) { }
 
-  private apiUrl =  'api/news';
+  private apiUrl =  'http://localhost:5000/api/news';
 
   getNews() : Observable<News[]> {
     return this.http.get<News[]>(this.apiUrl);

@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class SubjectService {
-  private apiUrl =  'api/subjects'
+  private apiUrl =  'http://localhost:5000/api/subjects'
 
   constructor(private http:HttpClient) {}
 

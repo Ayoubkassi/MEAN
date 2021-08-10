@@ -23,7 +23,7 @@ export class AuthService {
 
   constructor(private http:HttpClient) { }
 
-  private apiUrl =  'api/products';
+  private apiUrl =  'http://localhost:5000/api/products';
 
   registerUser(user : User) : Observable<User>  {
     const url = `${this.apiUrl}/register`;

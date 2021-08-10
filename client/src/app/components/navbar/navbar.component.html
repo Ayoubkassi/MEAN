@@ -13,15 +13,15 @@
        </li>
 
         <li >
-        <a [routerLink]="['/']" class="item" >Ingénierie
+        <a [routerLink]="['/ingenierie/sdb']" class="item" >Ingénierie
         <div class="sub-menu1">
             <ul>
-                <li><a href="#">Superstructure des batiments</a></li>
-                <li><a href="#">Resaux des fluids pour batiment a tous usage</a></li>
-                <li><a href="#">Reseaux d'electricite CFO / CFA</a></li>
-                <li><a href="#">Etude de l'assainissement , VRD</a></li>
-                <li><a href="#">Coordination et suivi des travaux de réalisation</a></li>
-                <li><a href="#">Economie de la construction & Metrie</a></li>
+                <li><a [routerLink]="['/ingenierie/sdb']">Superstructure des batiments</a></li>
+                <li><a [routerLink]="['/ingenierie/rdf']">Resaux des fluids pour batiment a tous usage</a></li>
+                <li><a [routerLink]="['/ingenierie/re']">Reseaux d'electricite CFO / CFA</a></li>
+                <li><a [routerLink]="['/ingenierie/ea']">Etude de l'assainissement , VRD</a></li>
+                <li><a [routerLink]="['/inegnierie/cest']">Coordination et suivi des travaux de réalisation</a></li>
+                <li><a [routerLink]="['/ingenierie/edc']">Economie de la construction & Metrie</a></li>
             </ul>
         </div>
         </a>
@@ -40,14 +40,14 @@
     </li>
 
     <li>
-           <a [routerLink]="['/']" class="item">SDE BIM
+           <a [routerLink]="['/sde-bim/audite' ]" class="item">SDE BIM
             <div class="sub-menu1">
                 <ul>
-                    <li><a href="#">Audite</a></li>
-                    <li><a href="#">Gestion des Plateformes collaboratives</a></li>
-                    <li><a href="#">Accompagnements</a></li>
-                    <li><a href="#">Modélisation 3D </a></li>
-                    <li><a href="#">Détachement de compétences (modeleur / coordonnateur / Bim Manager)</a></li>
+                    <li><a [routerLink]="['/sde-bim/audite' ]" >Audite</a></li>
+                    <li><a [routerLink]="['/sde-bim/gpc']" >Gestion des Plateformes collaboratives</a></li>
+                    <li><a [routerLink]="['/sde-bim/accompagne']" >Accompagnements</a></li>
+                    <li><a [routerLink]="['/sde-bim/model3d']" >Modélisation 3D </a></li>
+                    <li><a [routerLink]="['/sde-bim/ddc']" >Détachement de compétences (modeleur / coordonnateur / Bim Manager)</a></li>
                 </ul>
             </div>
            </a>
@@ -62,12 +62,12 @@
     </li>
 
     <li>
-           <a [routerLink]="['/']" class="item">Académie
+           <a [routerLink]="['/academie/formation']" class="item">Académie
             <div class="sub-menu2">
                 <ul>
-                    <li><a href="">Formation</a></li>
-                    <li><a href="">Certification </a></li>
-                    <li><a href="">UTS ( upgrade technical skills )</a></li>
+                    <li><a [routerLink]="['/academie/formation']">Formation</a></li>
+                    <li><a [routerLink]="['/academie/certification']">Certification </a></li>
+                    <li><a [routerLink]="['/academie/uts']">UTS ( upgrade technical skills )</a></li>
                 </ul>
             </div>
            </a>
