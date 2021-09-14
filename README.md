@@ -14,7 +14,7 @@ With Admin Scheduler :
 
 
 > install dependencies and run the project
- ```bash
+ ```javascript
   npm run client-install
   npm install
   npm run dev
